@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Anton', sans-serif;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.logo{
+    font-size: 35px;
+    color: var(--rojito3);
+}
+
+body{
+    width: 100%;
+    color: white;
+}
+
+.hero{
+    margin-left: 140px;
+}
+
+.text-hero{
+    font-size: 55px;
+    margin-top: 200px;
+    font-weight: bold;
+    color: var(--rojito);
+}
+
+.text-hero2{
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.hero-button{
+    background-color: var(--rojito2);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.hero-button a{
+    color: white;
+}
+
+.hero-button a {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.hero-button a:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.hero-button:hover a {
+    padding-right: 25px;
+}
+  
+.hero-button:hover a:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+:root {
+    --rojito: #a70c0c;
+    --rojito2: #cf0b0b;
+    --rojito3:#f80606;
+}
+
+.header-container{
+    width: 100%;
+    height: 100vh;
+    background: url(/img/fondito.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    color: var(--rojito3);
+    font-size: 1.2rem;
+}
+
+.navbar ul li:before{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: var(--rojito3);
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.navbar ul li:hover::before{
+    width: 100%;
+}
+
+.navbar-list li:last-child > a {
+    border: 1px solid var(--rojito2);
+    font-size: 14px;
+    padding: 8px 40px;
+    border-radius: 3px;
+    transition: all 0,3s linear;
+}
+
+.navbar-list li:last-child > a:hover {
+    color: white;
+    transition: all 0,3s linear;
+    font-weight: 700;
+}
