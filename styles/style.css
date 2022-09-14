@@ -233,8 +233,9 @@ label{display: none;}
     label{
         display: block;
         position: fixed;
-        margin-left: 700px;
+        left: 20px;
         font-size: 40px;
+        float: right;
     }
     ul{
        display: none;
