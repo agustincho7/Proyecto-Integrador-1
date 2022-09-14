@@ -233,7 +233,7 @@ label{display: none;}
     label{
         display: block;
         position: fixed;
-        left: 20px;
+        right: 20px;
         font-size: 40px;
         float: right;
     }
