@@ -23,6 +23,8 @@ html{
 body{
     width: 100%;
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
 .hero{
@@ -97,6 +99,8 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    top: 0;
+    z-index: 1;
 }
 
 .navbar{
@@ -147,4 +151,114 @@ body{
     color: white;
     transition: all 0,3s linear;
     font-weight: 700;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+    background-color: black;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(88, 86, 86);
+}
+
+#galeria{
+    font-size: 25px;
+    padding: 180px 0;
+}
+
+input {
+    display: none;
+}
+
+label{display: none;}
+
+.copyright{
+	display: flex;
+	justify-content: space-between;
+	color: var(--color-white);
+	align-items: center;
+	text-align: center;
+	padding: 2rem;
+	background-color: rgb(60, 57, 63);
+}
+
+
+@media (max-width: 992px) {
+    .hero{
+        text-align: center;
+        width: 70%;
+        align-items: center;
+        margin-left: 0;
+    }
+    .hero .text-hero{
+        font-size: 45px;
+    }
+    .hero .text-hero2{
+        font-size: 45px;
+    }
+
+    .hero-button{
+        justify-content: center;
+    }
+}
+
+
+
+@media (min-width: 600px) {
+    .wide{
+        grid-column: span 2;
+    }
+    
+    .tall{
+        grid-row: span 2;
+    }
+}
+
+
+
+
+@media (max-width: 1030px) {
+    label{
+        display: block;
+        position: fixed;
+        margin-left: 700px;
+        font-size: 40px;
+    }
+    ul{
+       display: none;
+       position: fixed;
+       background-color: white;
+        width: 100%;
+        height: calc(100vh - 80px);
+        top: 100px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(200%);
+        gap: 40px;
+    }
+
+
+    .navbar i{
+        display: block;
+    }
+
+    input:checked ~ ul{
+        transform: translateX(0%);
+        display: flex;
+    }
+
 }

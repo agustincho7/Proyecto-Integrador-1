@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Integrador</title>
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="header-container">
         <div class="navbar">
             <p class="logo">Liga de Campeones</p>
+            <label for="toggle-menu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="toggle-menu">
             <ul class="navbar-list">
-                <li><a href="#">Galeria</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="contacto.html" target="_blank">Contacto</a></li>
                 <li><a href="login.html" target="_blank">Iniciar Sesión</a></li>
                 <li><a href="registro.html" target="_blank">Registrarse</a></li>
             </ul>
@@ -24,8 +27,27 @@
             <button class="hero-button"><a href="registro.html" target="_blank">Registrate ahora</a></button>
         </div>
     </div>
-    <div class="main-container">
-        
+    
+    <div class="grid-container" id="galeria">
+        <h1 class="galeria">Galeria de campeones</h1>
+        <div class="grid-item wide" style="background-image: url(/img/Aatrox_0.jpg);"></div>
+        <div class="grid-item" style="background-image: url(/img/Aphelios_0.jpg);"></div>
+        <div class="grid-item tall" style="background-image: url(/img/AurelionSol_0.jpg);"></div>
+        <div class="grid-item" style="background-image: url(/img/Belveth_0.jpg);"></div>
+        <div class="grid-item" style="background-image: url(/img/Ekko_0.jpg);"></div>
+        <div class="grid-item wide" style="background-image: url(/img/Heimerdinger_0.jpg);"></div>
+        <div class="grid-item" style="background-image: url(/img/Jinx_0.jpg);"></div>
+        <div class="grid-item tall" style="background-image: url(/img/Mordekaiser_0.jpg);"></div>
+        <div class="grid-item" style="background-image: url(/img/Shyvana_0.jpg);"></div>
+        <div class="grid-item wide" style="background-image: url(/img/TahmKench_0.jpg);"></div>
+        <div class="grid-item wide" style="background-image: url(/img/Ziggs_0.jpg);"></div>
     </div>
+
+   
+    <footer>
+        <div class="copyright">
+            &copy; Copyright Agustin Avella
+        </div>
+    </footer>
 </body>
 </html>
